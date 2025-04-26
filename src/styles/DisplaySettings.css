@@ -1,0 +1,168 @@
+.display-settings {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
+}
+
+.settings-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.settings-toggle:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: rotate(30deg);
+}
+
+.settings-panel {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 280px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 15px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.settings-panel h3 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.settings-section {
+  margin-bottom: 20px;
+}
+
+.settings-section h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.setting-group {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.setting-group label {
+  flex: 0 0 30%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.setting-group input[type="range"],
+.setting-group select {
+  flex: 1;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 3px;
+  padding: 0 5px;
+  color: white;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.setting-group input[type="range"] {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 10px;
+}
+
+.setting-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.setting-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.setting-group select {
+  cursor: pointer;
+  padding: 3px 5px;
+  background-color: #000000;
+  border-radius: 3px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.setting-group select option {
+  background-color: #000000;
+  color: white;
+}
+
+.setting-value {
+  width: 30px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+  width: 70%;
+}
+
+.color-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.color-option label {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.color-option input[type="color"] {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 3px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .settings-panel {
+    width: 250px;
+    right: -10px;
+  }
+  
+  .setting-group {
+    font-size: 11px;
+  }
+} 
