@@ -10,19 +10,19 @@ function App() {
     separation: 1.5,
     alignment: 1.0,
     cohesion: 1.0,
-    newAgents: 5,
-    trailLength: 200,
+    newAgents: 10,
+    trailLength: 300,
     colorRandomness: 0, // Percentage of random colors (0-100)
-    simulationSpeed: 1.0 // Default speed multiplier
+    simulationSpeed: 0.7 // Default speed multiplier
   });
   
   const [displaySettings, setDisplaySettings] = useState({
-    trailLength: 200,
-    trailThickness: 0.5,
+    trailLength: 300,
+    trailThickness: 0.3,
     trailType: 'line',
     colorMode: 'single',
     agentShape: 'triangle',
-    agentSize: 1,
+    agentSize: 0.7,
     fadeAmount: 25,
     colors: {
       main: '#ffffff',

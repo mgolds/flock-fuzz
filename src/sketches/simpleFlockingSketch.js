@@ -6,15 +6,15 @@ export const simpleFlockingSketch = (p) => {
     separation: 1.5,
     alignment: 1.0,
     cohesion: 1.0,
-    newAgents: 5
+    newAgents: 10
   };
   let displaySettings = {
-    trailLength: 50,
-    trailThickness: 0.5,
+    trailLength: 300,
+    trailThickness: 0.3,
     trailType: 'line',
     colorMode: 'single',
     agentShape: 'triangle',
-    agentSize: 1,
+    agentSize: 0.7,
     fadeAmount: 25,
     colors: {
       main: '#ffffff',
